@@ -14,7 +14,7 @@ ADVSEL=$(whiptail --title "Language Choice" --fb --menu "Please select the langu
   case $ADVSEL in
 
     1)
-        source language/fr_FR.conf > /dev/null 2>&1
+        source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/language/fr_FR.conf > /dev/null 2>&1
         clear
         echo -e "$msg_copyright"
         sleep 2
