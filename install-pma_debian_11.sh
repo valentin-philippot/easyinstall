@@ -20,19 +20,19 @@ if (whiptail --title "$WHPT_title_apache2_nginx" --yesno "$WHPT_qst_nginx_apache
     
     #CONFIG NGINX
     if (whiptail --title "$WHPT_title_LOC_EXT" --yesno "$WHPT_qst_loc_dmext" 8 78 --no-button "LOCALHOST" --yes-button "DOMAINE-EXTERNE"); then
-    source ./config/nginx_pma_https.sh > /dev/null 2>&1
+    source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/nginx_pma_https.sh > /dev/null 2>&1
     nginxpmahttps
     else
-    source ./config/nginx_pma_http.sh > /dev/null 2>&1
+    source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/nginx_pma_http.sh > /dev/null 2>&1
     nginxpmahttp
     fi
 else
     #CONFIG APACHE2
     if (whiptail --title "$WHPT_title_LOC_EXT" --yesno "$WHPT_qst_loc_dmext" 8 78 --no-button "LOCALHOST" --yes-button "DOMAINE-EXTERNE"); then
-    source ./config/apache2_pma_https.sh > /dev/null 2>&1
+    source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/apache2_pma_https.sh > /dev/null 2>&1
     apache2pmahttps
     else
-    source ./config/apache2_pma_http.sh > /dev/null 2>&1
+    source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/apache2_pma_http.sh > /dev/null 2>&1
     apache2pmahttp
     fi
 fi  
