@@ -105,10 +105,10 @@ echo "$Q8" # -> = /language/lang_LANG.conf
 sleep 0.5
 cd /root/superinstall-main/ || exit 
 if (whiptail --title "$WHPT_title_httphttps" --yesno "$WHPT_qst_locdmext" 8 78 --no-button "LOCALHOST" --yes-button "DOMAINE-EXTERNE"); then
-source ./config/nginx_https.sh > /dev/null 2>&1
+source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/nginx_https.sh > /dev/null 2>&1
 nginxpterohttps
 else
-source ./config/nginx_http.sh > /dev/null 2>&1
+source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/config/nginx_http.sh > /dev/null 2>&1
 nginxpterohttp
 fi
 
