@@ -158,7 +158,7 @@ function install_ptero(){
         Debian\ *\ 11*)
           whiptail --infobox "$WHPT_inst$tsb" 20 78
           sleep 2
-          source ./installation-$tsb\_debian_11.sh
+          source https://raw.githubusercontent.com/valentin-philippot/easyinstall/main/installation-$tsb\_debian_11.sh
           ;;
         *)
         echo "$oops_error"
