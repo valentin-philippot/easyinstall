@@ -165,7 +165,7 @@ function install_ptero(){
         sleep 5
           ;;
       esac
-	      installptero
+      ptero
      else
       menuprincipal
   fi
