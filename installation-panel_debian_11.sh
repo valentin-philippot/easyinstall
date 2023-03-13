@@ -5,7 +5,7 @@
 # Version 1.0.0 : Install the Pterodactyl Panel!"
 #
 
-function installptero(){
+function ptero(){
 #[Update du serveur et Ajouts/Installation des Dépendences]
 echo "$Q1" # -> = /language/lang_LANG.conf
 sleep 0.5
